@@ -81,3 +81,39 @@ body{
 .flex-box-2 > div{
     flex: 1;
 }
+
+/* İndex [5 || Responsive] */
+@media screen and (max-width: 900px){
+    .full-page{
+        background-image: none;
+    }
+    body{
+        background-color: #111;
+        z-index: -1;
+    }
+    .box{
+        z-index: 99999;
+        overflow: initial;
+        border-radius: initial; /* initial başlangıç değeri demek. Yani hiç bir şey yok gibi ulan!. */
+        transform: initial;
+        width: initial;
+        box-shadow: initial;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .box > .box-image > img{
+        border-radius: 500%;
+    }
+}
+@media screen and (max-width: 900px){
+    .box > .box-image > img{
+        margin: 50px 0 0 0;
+    }
+}
+@media screen and (max-width: 1000px){
+    .box > .box-image > img{
+        margin: 100px 0 0 0;
+    }
+}
