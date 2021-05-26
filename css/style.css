@@ -1,0 +1,83 @@
+/* İmport */
+@import url(font.css);  
+
+/* İndex [0] */
+body{
+    background-color: #bbb;
+    margin: 0;
+}
+
+/* İndex [1] */
+.full-page{
+    background-image: url(../img/harvesttimegroup.homesteadcloud.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+/* İndex [2] */
+.box{
+    overflow: hidden;
+    background-color: #111;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5);
+}
+.box > .box-image > img{
+    display: block;
+    margin: 0 auto;
+}
+.box > h1{
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.box > p{
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bolder;
+    color: #bbb;
+    text-align: center;
+    font-style: italic;
+}
+
+/* İndex [3] */
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-box > div{
+    padding: 5px;
+    margin: 5px;
+}
+.flex-box > div > a{
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: 250ms all;
+}
+.flex-box > div > hr{
+    border: none;
+    background: #bbb;
+    height: 2px;
+    transition: 250ms all;
+}
+.flex-box > div > a:hover + hr{
+    background: red;
+}
+
+/* İndex [4] */
+.flex-box-2{
+    display: flex;
+    flex-direction: column;
+}
+.flex-box-2 > div{
+    flex: 1;
+}
