@@ -8,10 +8,15 @@
         <meta name="description" content="Pâyidar Official Web Site Page | Site'ye Kemik & Ruh Yaşı 18 Altı Olan Veledler Giremez." />
         <meta name="og:site_name" content="Pâyidar Official" />
         <meta name="theme-color" content="#00ff44" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Link -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="img/png" href="img/kedi_2.jpg" />
+
+        <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="js/typed.js"></script>
     </head>
     <body>
         <!-- Wallpaper & Box & FB Başlar -->
@@ -21,18 +26,18 @@
                     <img src="img/kedi_2.jpg" alt="Pâyidar">
                 </div>
                 <h1>Pâyidar</h1>
-                <p>Web Designer - Java & Python Developer.</p>
+                <p class="payidar-t"></p>
                 <div class="flex-box">
                     <div>
-                        <a href="#">Discord</a>
+                        <a href="https://discord.gg/ZxAHPurBUZ" target="_blank" title="Pâyidar Discord">Discord</a>
                         <hr/>
                     </div>
                     <div>
-                        <a href="#">İnstagram</a>
+                        <a href="https://instagram.com/payidardll" target="_blank" title="Pâyidar İnstagram">İnstagram</a>
                         <hr/>
                     </div>
                     <div>
-                        <a href="#">Twitter</a>
+                        <a href="https://twitter.com/payidarorjinal" target="_blank" title="Pâyidar Twitter">Twitter</a>
                         <hr/>
                     </div>
                 </div>
@@ -41,6 +46,16 @@
         <!-- Wallpaper & Box & FB Biter -->
 
         <!-- Script Başlar -->
+        <script>
+            $(function(){
+                $('.payidar-t').typed({
+                    strings: ["Web Designer - Java & Python Developer."],
+                    typeSpeed: 200,
+                    backDelay: 1,
+                    loop: false
+                })
+            })
+        </script>
         <script>
             var title = document.title;
             var degisken_title = "👀 Pâyidar Seni Çağırıyor"
